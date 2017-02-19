@@ -1,0 +1,76 @@
+<resources>
+    <!--App name-->
+    <string name="app_name" translatable="false">Stock Hawk</string>
+
+    <!--preference stock initialized key-->
+    <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
+
+    <!--stocks key-->
+    <string name="pref_stocks_key" translatable="false">stocks</string>
+
+    <!--display mode-->
+    <string name="pref_display_mode_key" translatable="false">displayMode</string>
+
+    <!--default display mode-->
+    <string name="pref_display_mode_default" translatable="false">@string/pref_display_mode_percentage_key</string>
+
+    <!--absolute key-->
+    <string name="pref_display_mode_absolute_key" translatable="false">absolute</string>
+
+    <!--percentage key-->
+    <string name="pref_display_mode_percentage_key" translatable="false">percentage</string>
+
+    <!--can't translate company stock names-->
+    <string name="default_stocks_yahoo" translatable="false">YHOO</string>
+    <string name="default_stocks_apple" translatable="false">AAPL</string>
+    <string name="default_stocks_microsoft" translatable="false">MSFT</string>
+    <string name="default_stocks_facebook" translatable="false">FB</string>
+
+    <!--not translatable -->
+    <string name="action_change_units" translatable="false">@string/pref_display_mode_key</string>
+
+    <!--add stock key-->
+    <string name="dialog_title">Add Stock</string>
+
+    <!--symbol key-->
+    <string name="dialog_hint">Symbol (e.g. GOOG)</string>
+
+    <!--cancel key-->
+    <string name="dialog_cancel">Cancel</string>
+
+    <!--add key-->
+    <string name="dialog_add">Add</string>
+
+    <!--no network key-->
+    <string name="error_no_network">No network connectivity! Will load stock cursor when the network is available.</string>
+
+    <!--no stocks added key-->
+    <string name="error_no_stocks">No stocks added! Hit the floating action button to add one.</string>
+
+    <!--change to percentage key-->
+    <string name="toast_stock_added_no_connectivity" translatable="true">Symbol %s added. Will refresh when network available.</string>
+
+    <!--no connection key-->
+    <string name="toast_no_connectivity" translatable="true">Will refresh when network available.</string>
+
+    <!--no network key-->
+    <string name="no_network" translatable="true">The network is not available to fetch the data.</string>
+    <string name="no_stock_info" translatable="true">No Stock Information is Available</string>
+    <string name="server_down" translatable="true">Stocks server is down. Try again later!</string>
+    <string name="server_error" translatable="true">Stocks server error. Try again later!</string>
+    <string name="invalid_stock" translatable="true">Stock not found</string>
+
+    <!--key name for storing stock status in shared preference-->
+    <string name="pref_stock_key" translatable="false">stock</string>
+    <string name="appwidget_text" translatable="true">EXAMPLE</string>
+    <string name="configure" translatable="true">Configure</string>
+    <string name="add_widget" translatable="false">Add widget</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="company" translatable="true">Company:</string>
+    <string name="price" translatable="true">Price:</string>
+    <string name="change" translatable="true">% change:</string>
+    <string name="abs_change" translatable="true">abs change:</string>
+    <string name="add_new_stock">Add new stock</string>
+</resources>
