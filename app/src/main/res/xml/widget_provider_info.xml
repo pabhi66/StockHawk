@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:initialLayout="@layout/widget_provider"
     android:initialKeyguardLayout="@layout/widget_provider"
-    android:minHeight="80dp"
+    android:minHeight="120dp"
     android:minWidth="250dp"
     android:resizeMode="horizontal|vertical"
     android:previewImage="@drawable/stocks"

@@ -1,18 +1,14 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.udacity.stockhawk.ui.StockDetailsFragment">
+    tools:context="com.udacity.stockhawk.ui.StockDetailsFragment"
+    android:background="@color/material_blue_500"
+    android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/material_blue_500">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/company_name"
@@ -20,12 +16,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/company"
                 android:paddingTop="10dp"
-                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
                 android:textStyle="bold"
                 android:textSize="21sp"
                 android:paddingBottom="10dp"
                 android:textColor="@color/white"
-                android:paddingRight="10dp"/>
+                android:paddingEnd="10dp"/>
 
 
             <TextView
@@ -52,9 +48,9 @@
                 android:textStyle="bold"
                 android:textSize="21sp"
                 android:paddingTop="10dp"
-                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
                 android:paddingBottom="10dp"
-                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
                 android:textColor="@color/white"
                 android:layout_below="@+id/company_name"/>
 
@@ -66,9 +62,9 @@
                 android:textStyle="bold"
                 android:textSize="21sp"
                 android:paddingTop="10dp"
-                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
                 android:paddingBottom="10dp"
-                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
                 android:textColor="@color/white"
                 android:layout_below="@+id/price_name"/>
 
@@ -80,9 +76,9 @@
                 android:textStyle="bold"
                 android:textSize="21sp"
                 android:paddingTop="10dp"
-                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
                 android:paddingBottom="10dp"
-                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
                 android:textColor="@color/white"
                 android:layout_below="@+id/percentage_name"/>
 
@@ -130,13 +126,15 @@
                 android:layout_below="@+id/price_per"
                 android:layout_toEndOf="@+id/abs_name"
                 android:textColor="@color/white"/>
-        </RelativeLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/price_abs"
+                android:background="@color/white" />
+
+</RelativeLayout>
 
 
-        <com.github.mikephil.charting.charts.LineChart
-            android:id="@+id/chart"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
-    </LinearLayout>
-</FrameLayout>
+</ScrollView>
